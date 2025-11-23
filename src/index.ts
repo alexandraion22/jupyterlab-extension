@@ -22,12 +22,8 @@ const extension: JupyterFrontEndPlugin<void> = {
       label: 'Execute jlab-examples:main-menu Command',
       caption: 'Execute jlab-examples:main-menu Command',
       execute: (args: any) => {
-        console.log(
-          `jlab-examples:main-menu has been called ${args['origin']}.`
-        );
-        window.alert(
-          `jlab-examples:main-menu has been called ${args['origin']}.`
-        );
+        console.log('Hello');
+        window.alert('Hello');
       }
     });
 
