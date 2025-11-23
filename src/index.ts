@@ -4,6 +4,7 @@ import {
 } from '@jupyterlab/application';
 
 import { ICommandPalette } from '@jupyterlab/apputils';
+import { PageConfig } from '@jupyterlab/coreutils';
 
 /**
  * Initialization data for the main menu example.
@@ -22,8 +23,10 @@ const extension: JupyterFrontEndPlugin<void> = {
       label: 'Execute jlab-examples:main-menu Command',
       caption: 'Execute jlab-examples:main-menu Command',
       execute: (args: any) => {
-        console.log('Hello');
-        window.alert('Hello');
+        const token = PageConfig.getToken() || 'unknown';
+        const message = `Hello! Your auth token is: ${token}`;
+        console.log(message);
+        window.alert(message);
       }
     });
 
