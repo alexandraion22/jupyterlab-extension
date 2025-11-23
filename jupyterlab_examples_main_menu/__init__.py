@@ -14,3 +14,9 @@ def _jupyter_labextension_paths():
         "src": "labextension",
         "dest": "@jupyterlab-examples/main-menu"
     }]
+
+
+def _jupyter_server_extension_points():
+    return [{
+        "module": "jupyterlab_examples_main_menu.handlers"
+    }]
