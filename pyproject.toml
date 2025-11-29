@@ -39,7 +39,6 @@ exclude = [".github", "binder"]
 [tool.hatch.build.targets.wheel.shared-data]
 "jupyterlab_examples_main_menu/labextension" = "share/jupyter/labextensions/@jupyterlab-examples/main-menu"
 "install.json" = "share/jupyter/labextensions/@jupyterlab-examples/main-menu/install.json"
-"jupyter-config/server-config.d/jupyterlab_examples_main_menu.json" = "etc/jupyter/jupyter_server_config.d/jupyterlab_examples_main_menu.json"
 
 [tool.hatch.build.hooks.version]
 path = "jupyterlab_examples_main_menu/_version.py"

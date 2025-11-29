@@ -1,8 +1,0 @@
-{
-  "ServerApp": {
-    "jpserver_extensions": {
-      "jupyterlab_examples_main_menu.handlers": true
-    }
-  }
-}
-
